@@ -8,7 +8,7 @@ This is **my ninth project**. Built in accordance with given references. Fully r
 
 ## Checkout the live demo
 
-[Typemaster pre-launch landing page]()
+[Typemaster pre-launch landing page](https://peac-h.github.io/9_Typemaster-Landing-Page/)
 
 ## Built with
 
