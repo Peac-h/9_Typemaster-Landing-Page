@@ -1,0 +1,105 @@
+// typography mixins
+
+//// headings
+@mixin heading {
+  font-weight: 900;
+  color: var(--color-dark-blue);
+  text-transform: uppercase;
+}
+
+@mixin heading-h1 {
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+}
+
+@mixin heading-h2 {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+}
+
+@mixin heading-h3 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+//// buttons
+@mixin typo-button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+}
+
+//// footer
+@mixin paragraph-footer {
+  font-weight: 700;
+}
+
+@mixin author {
+  font-family: var(--font-author);
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+//// margins
+
+.mg-l {
+  margin-bottom: 4rem;
+}
+.mg-m {
+  margin-bottom: 2.7rem;
+}
+.mg-s {
+  margin-bottom: 2.4rem;
+}
+.mg-right {
+  margin-right: 1.3rem;
+}
+
+//// buttons
+
+.btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  padding: 1.6rem 2.7rem;
+  @include typo-button;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1rem 1.2rem;
+  }
+
+  transition: all 0.5s;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &--color {
+    background: var(--color-teriyaki);
+    color: var(--color-white);
+
+    &:hover,
+    &:focus {
+      background: var(--color-tangerine);
+    }
+  }
+
+  &--grey {
+    background: var(--color-gray);
+    color: var(--color-dark-blue);
+
+    &:hover,
+    &:focus {
+      background: var(--color-dark-blue);
+      color: var(--color-white);
+    }
+  }
+
+  &--invisible {
+    background: none;
+    color: var(--color-light-blue);
+  }
+}

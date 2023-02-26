@@ -1,0 +1,38 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  align-items: start;
+  justify-items: start;
+
+  @media only screen and (max-width: $bp-large) {
+    gap: 6rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    text-align: center;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-rows: 8.9rem 5.6rem min-content;
+    gap: 2.4rem;
+    @media only screen and (max-width: $bp-small) {
+      justify-items: center;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    width: 6.5rem;
+    background: var(--color-teriyaki);
+    border-radius: 1.6rem;
+  }
+
+  &__header {
+    @include heading;
+    @include heading-h3;
+  }
+}

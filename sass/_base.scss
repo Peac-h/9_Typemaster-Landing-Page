@@ -1,0 +1,49 @@
+:root {
+  // colors
+  --color-teriyaki: hsla(22, 88%, 52%, 1);
+  --color-tangerine: hsla(22, 100%, 69%, 1);
+  --color-dark-blue: hsla(220, 51%, 17%, 1);
+  --color-light-blue: hsla(220, 23%, 58%, 1);
+  --color-gray: hsla(198, 28%, 93%, 1);
+  --color-white: hsl(0, 0%, 100%);
+
+  // fonts
+  --font-primary: "Barlow", sans-serif;
+  --font-author: "Grape Nuts", cursive;
+}
+
+// responsive breakpoints
+$bp-large: 62.5em; ////////////// 1000px
+$bp-medium: 50em; ///////////// 800px
+$bp-small: 37em; ////////////// 592px
+$bp-smallest: 23em; /////////// 368px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: var(--color-light-blue);
+
+  overflow-x: hidden;
+}
