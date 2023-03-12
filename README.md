@@ -10,6 +10,8 @@ This is **my ninth project**. Built in accordance with given references. Fully r
 
 [Typemaster pre-launch landing page](https://peac-h.github.io/9_Typemaster-Landing-Page/)
 
+![Typemaster pre-launch landing page](https://raw.githubusercontent.com/Peac-h/9_Typemaster-Landing-Page/main/Screenshot.png)
+
 ## Built with
 
 - html
